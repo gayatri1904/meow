@@ -1,19 +1,4 @@
-body{
-    box-sizing:content-box;
-    font-style: italic;
-    margin: 5px;
-    padding: 5px;
-}
-#main-nav{
-    border: 1px solid black ;
-    height: 60px;
-    width: 50%;
-    background-position:center;
-    background-repeat: no-repeat;
-    font-size: medium;
-    background-size: 800px;
-    
-}
-.dogp{
-    background-position: unset;
+*{
+    margin: 0;
+    padding: 0;
 }

@@ -1,17 +1,27 @@
 import React from 'react';
 import './homepage.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import  from "./logo.png";
 
 export default function homepage() {
   return (
     <>
-    <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#profile">profile</a>
-  <a href="#about">About</a>
-</div>
-       <div>
-        <img
-       </div>
+    <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">Meow</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Profile</Nav.Link>
+            <Nav.Link href="#pricing">About</Nav.Link>
+            <img src="../logo.png" alt=""/>
+          </Nav>
+        </Container>
+      </Navbar>
+      <div>
+        <img src="../logo.png" alt=""></img>
+      </div>
     </>
   )
 }
