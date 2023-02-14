@@ -4,6 +4,16 @@
 }
 .logo{
     width: 50px;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-left: -60px;
+}
+.navbar-brand{
+    color: #f2abd8;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: -8px;
+}
+.me-auto{
+    margin-top: -8px;
+    font-size: 1.2rem;
 }
