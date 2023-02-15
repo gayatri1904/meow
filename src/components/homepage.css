@@ -4,6 +4,17 @@
 }
 .logo{
     width: 50px;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-left: -60px;
+}
+.me-auto{
+    font-size: 1.2rem;
+    margin-top: 0px;
+    
+}
+.nav-name{
+    color: #c108ab;
+    font-size: 1.8rem;
+    margin-top: -8px;
+    
 }

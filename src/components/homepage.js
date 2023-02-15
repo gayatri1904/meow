@@ -11,12 +11,11 @@ export default function homepage() {
     <Navbar bg="dark" variant="dark">
         <Container>
           <img src={logo} alt="" className='logo'/>
-          <Navbar.Brand href="#home">Meow</Navbar.Brand>
+          <Navbar.Brand href="#home" className='nav-name'>Meow</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Profile</Nav.Link>
             <Nav.Link href="#pricing">About</Nav.Link>
-            <img src="../logo.png" alt=""/>
           </Nav>
         </Container>
       </Navbar>
