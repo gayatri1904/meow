@@ -1,28 +1,28 @@
-import React from 'react'
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
+import { useState } from 'react';
 export default function Slider() {
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+      setIndex(selectedIndex);
+    };
   return (
     <>
-    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://tinypng.com/images/social/website.jpg" class="d-block w-100" alt="..." style={{height:"500px"}}></img>
-    </div>
-    <div class="carousel-item">
-      <img src="https://tinypng.com/images/social/website.jpg" class="d-block w-100" alt="..." style={{height:"500px"}}></img>
-    </div>
-    <div class="carousel-item">
-      <img src="https://tinypng.com/images/social/website.jpg" class="d-block w-100" alt="..." style={{height:"500px"}}></img>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+          <Carousel.Item>
+          <img src="https://ik.imagekit.io/ok2wgebfs/Imperial/WhatsApp_Image_2023-01-15_at_10.48.19_PM.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1674968499323" className='imageDisplay' alt='image1'></img>
+          </Carousel.Item>
+          <Carousel.Item>
+          <img src="https://ik.imagekit.io/ok2wgebfs/Imperial/WhatsApp_Image_2023-01-15_at_10.48.16_PM__1_.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1674398175071" className='imageDisplay' alt='image2'></img>
+          </Carousel.Item>
+          <Carousel.Item>
+          <img src="https://ik.imagekit.io/ok2wgebfs/Imperial/WhatsApp_Image_2023-01-15_at_10.48.16_PM.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1674398175082" className='imageDisplay' alt='image3'></img>
+          </Carousel.Item>
+          <Carousel.Item>
+          <img src="https://ik.imagekit.io/ok2wgebfs/Imperial/WhatsApp_Image_2023-01-15_at_10.48.17_PM.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1674968324539" className='imageDisplay' alt='image1'></img>
+          </Carousel.Item>
+      </Carousel>
     </>
   )
 }
